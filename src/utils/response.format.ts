@@ -36,7 +36,7 @@ export const jsonIdataQuestion = (data: DataNodeResponse) => {
             // id: data.properties.Answer.id,
             // type: data.properties.Answer.type,
             content: data.properties.Answer.rich_text[0]?.plain_text || null,
-            link: data.properties.Answer.rich_text[0]?.href || null,
+            link: data.properties.Link.url|| null,
          },
          Date: {
             // id: data.properties.Date.id,
